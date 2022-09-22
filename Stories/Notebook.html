@@ -2,7 +2,7 @@
 title: Notebook beschaffen und einrichten
 description: Vorgehen zum beschaffen und einrichten eines einfachen Notebook für Büroarben und den persönlichen Gebrauch
 published: true
-date: 2022-09-22T12:50:25.302Z
+date: 2022-09-22T15:11:23.433Z
 tags: notebook office bilder betriebssystem
 editor: ckeditor
 dateCreated: 2022-09-13T12:16:49.693Z
@@ -50,7 +50,17 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Nach der Bestellung kam das Notebook nach 3 Tagen zu Hause an - alles ist wie bestellt. &nbsp;Ein kleiner Wermutstropfen: Das Gerät hat einen separaten Ladestecker und muss so über das mitgelieferte Netzgerät mit Strom versorgt werden und nicht über den vorhandenen USB-C Anschluss. Das bedeutet eine zusätzliches Ladegerät in meiner Sammlung, nachdem ich schon mit DELL- und Lenovo Ladgeräten ausgerüstet bin.</p>
 <p>Der nächste wichtige Schritt ist die Auswahl und Installation des Betriebssystems. Um zu schauen wie weit ich mit einem Linux basierten Betriebssystem komme, habe ich mich entschieden, kein Windows auf diesem Notebook zu installieren, was auch parallel zum Linux-basierten Betriebssystem möglich wäre. Die Geschichte und die modernen Derivate von Linux sind im Wikipedia ausführlich beschrieben &nbsp;<a href="https://de.wikipedia.org/wiki/Linux">https://de.wikipedia.org/wiki/Linux</a>, so dass ich darauf nicht eingehe. Ich habe mich für die Installation von Ubuntu entschieden, da dies weit verbreitet ist und eine gute Homepage zur Unterstützung bietet. Die verschiedenen Derivate für Notebooks basieren wie Ubuntu meist auf Devian und unterscheiden sich hauptsächlich durch die vorinstallierte Software und die Unterstützung von verschiedenen Gerätetreibern. Bei Problemen könnten deshalb auch noch Teile von anderen Linux-Derivaten ergänzt werden.</p>
 <p>Für die Installation von Ubuntu wird eine ausführlich Anleitung (in Englisch) geboten: <a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview</a></p>
-<p>Folgende Bemerkungen dazu: Für die Installation auf dem neuen Notebook habe ich gemäss Anleitung auf einem Windows Rechner einen USB-Stick mit 16 GB verwendet. Dazu habe ich gemäss Anleitung auch &nbsp;balenaEtcher installiert und verwendet. Die von mir verwendete Version von Ubuntu ist 22.04.1.</p>
+<p>Nachfolgend sind die einzelnen Schritte, wie ich sie durchgeführt habe, beschrieben:</p>
+<ul>
+  <li>Für die Installation auf dem neuen Notebook habe ich einen bootable USB Stick (16 GB) gemäss Anleitung auf einem Windows Rechner erstellt. Dazu habe ich Ubunu Version 22.04.1 heruntergeladen auch &nbsp;balenaEtcher installiert, um damit den USB stick “geflasht”. &nbsp;Windows hat danach noch Fehlermeldungen angezeigt, da windows den Inhalt des USB sticks nicht richtig interpretieren kann - diese Meldungen habe ich jedoch durch abbrechen ignoriert.&nbsp;</li>
+  <li>Auf dem neuen Notebook kann nach dem Start entweder DOS oder ein HP-Programm zur Anzeige von Dokumentationen gestartet werden. Um Ubuntu zu installieren muss der Rechner ausgeschaltet werden. Nach dem Einschalten bin ich dann durch drücken der F10 Taste ins BIOS gekommen, um die USB Schnittstelle als Boot device zu ändern. Dazu wird im Tab “Boot Options” unter “UEFI Boot Order” der Punkt “USB Flash drive/USB Hard disk” an die erste Stelle verschoben und dann gespeichert.</li>
+  <li>Dann wird der zuvor erstellte bootable USB stick in einen USB Interface gesteckt und das Notebook neu gestartet. Während der Installation von Ubuntu habe ich folglendes ausgewählt bzw. eingegeben<ul>
+      <li>Sprache: Deutsch und Install Ubuntu</li>
+      <li>Keyboard layout: Deutsch</li>
+      <li>&nbsp;</li>
+    </ul>
+  </li>
+</ul>
 <h1>Einrichtung vom Netzwerk und Ausgabegeräten</h1>
 <p>&nbsp;</p>
 <h1>Einrichtung von Programmen</h1>
