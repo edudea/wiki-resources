@@ -2,7 +2,7 @@
 title: Notebook beschaffen und einrichten
 description: Vorgehen zum beschaffen und einrichten eines einfachen Notebook für Büroarben und den persönlichen Gebrauch
 published: true
-date: 2022-09-22T15:11:23.433Z
+date: 2022-09-23T07:50:04.862Z
 tags: notebook office bilder betriebssystem
 editor: ckeditor
 dateCreated: 2022-09-13T12:16:49.693Z
@@ -52,15 +52,24 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Für die Installation von Ubuntu wird eine ausführlich Anleitung (in Englisch) geboten: <a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview</a></p>
 <p>Nachfolgend sind die einzelnen Schritte, wie ich sie durchgeführt habe, beschrieben:</p>
 <ul>
-  <li>Für die Installation auf dem neuen Notebook habe ich einen bootable USB Stick (16 GB) gemäss Anleitung auf einem Windows Rechner erstellt. Dazu habe ich Ubunu Version 22.04.1 heruntergeladen auch &nbsp;balenaEtcher installiert, um damit den USB stick “geflasht”. &nbsp;Windows hat danach noch Fehlermeldungen angezeigt, da windows den Inhalt des USB sticks nicht richtig interpretieren kann - diese Meldungen habe ich jedoch durch abbrechen ignoriert.&nbsp;</li>
+  <li>Für die Installation auf dem neuen Notebook habe ich einen bootable USB Stick (16 GB) gemäss Anleitung auf einem Windows Rechner erstellt. Dazu habe ich Ubuntu Version 22.04.1 heruntergeladen auch &nbsp;balenaEtcher installiert, um damit den USB stick “geflasht”. &nbsp;Windows hat danach noch Fehlermeldungen angezeigt, da windows den Inhalt des USB sticks nicht richtig interpretieren kann - diese Meldungen habe ich jedoch durch abbrechen ignoriert.</li>
   <li>Auf dem neuen Notebook kann nach dem Start entweder DOS oder ein HP-Programm zur Anzeige von Dokumentationen gestartet werden. Um Ubuntu zu installieren muss der Rechner ausgeschaltet werden. Nach dem Einschalten bin ich dann durch drücken der F10 Taste ins BIOS gekommen, um die USB Schnittstelle als Boot device zu ändern. Dazu wird im Tab “Boot Options” unter “UEFI Boot Order” der Punkt “USB Flash drive/USB Hard disk” an die erste Stelle verschoben und dann gespeichert.</li>
-  <li>Dann wird der zuvor erstellte bootable USB stick in einen USB Interface gesteckt und das Notebook neu gestartet. Während der Installation von Ubuntu habe ich folglendes ausgewählt bzw. eingegeben<ul>
-      <li>Sprache: Deutsch und Install Ubuntu</li>
+  <li>Dann wird der zuvor erstellte bootable USB stick in einen USB Interface gesteckt und das Notebook neu gestartet und Ubuntu installiert. Während der Installation von Ubuntu habe ich folgendes ausgewählt bzw. eingegeben<ul>
+      <li>Sprache: Deutsch und “Install Ubuntu”</li>
       <li>Keyboard layout: Deutsch</li>
-      <li>&nbsp;</li>
+      <li>What Apps would you like to install to start with? “Normale Installation” , Andere Optionen: “Download updates während der Installation von Ubuntu” und “Install third-party…”</li>
+      <li>Installationsart “Festplatte löschen und Ubuntu installieren” , Erweiterte Funktionen zur Verschlüsselung der Festplatte anwählen: “LVM bei der neuen Ubuntu-Installation verwenden” und “Die neue Ubuntu-Installation zur Sicherheit verschlüsseln…"</li>
+      <li>Ich habe Verschlüsselung gewählt, damit kann niemand ausser mir die Daten auf der Festplatte lesen. Ich muss einen Schlüssel vergeben, der bei jedem Start des Notebooks eingegeben werden muss. Der Schlüssel muss sicher aufbewahrt werden. Ohne Schlüssel können die Daten nicht mehr gelesen werden. Ausserdem habe ich die Option für den “Recovery Key” gewählt und auch “Überschreiben des leeren Bereichs der Festplatte”. Der Schlüssel und Revovery Key müssen sicher aufbewahrt werden - mehr dazu beim Thema “Passwortmanager”</li>
+      <li>Auswahl der Zeitzone.</li>
+      <li>Eingabe von Namen, Benutzername und Passwort mit der Option “Passwort zum anmelden abfragen”, Kein "Active directory”, da das Notebook nicht in einem Microsoft Netzwerk betrieben wird</li>
+      <li>Ortungsdienste “Nicht aktiviert”</li>
+      <li>Helfen Sie mit Ubuntu zu verbessern - “Ja, sende die Systeminformationen an Canonical” ausgewählt</li>
+      <li>Livepatch nicht aktiviert, da für ein privates Notebook nicht erforderlich</li>
+      <li>Verbinden Sie Ihre Online Konten: Wird später ausgeführt</li>
     </ul>
   </li>
 </ul>
+<p>&nbsp;</p>
 <h1>Einrichtung vom Netzwerk und Ausgabegeräten</h1>
 <p>&nbsp;</p>
 <h1>Einrichtung von Programmen</h1>
