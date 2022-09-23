@@ -2,7 +2,7 @@
 title: Notebook beschaffen und einrichten
 description: Vorgehen zum Beschaffen und Einrichten eines einfachen Notebook für Büroarben und den persönlichen Gebrauch
 published: true
-date: 2022-09-23T08:04:49.683Z
+date: 2022-09-23T09:50:44.797Z
 tags: notebook office bilder betriebssystem
 editor: ckeditor
 dateCreated: 2022-09-13T12:16:49.693Z
@@ -54,26 +54,47 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <ul>
   <li>Für die Installation auf dem neuen Notebook habe ich einen bootable USB Stick (16 GB) gemäss Anleitung auf einem Windows Rechner erstellt. Dazu habe ich Ubuntu Version 22.04.1 heruntergeladen auch &nbsp;balenaEtcher installiert, um damit den USB stick “geflasht”. &nbsp;Windows hat danach noch Fehlermeldungen angezeigt, da windows den Inhalt des USB sticks nicht richtig interpretieren kann - diese Meldungen habe ich jedoch durch abbrechen ignoriert.</li>
   <li>Auf dem neuen Notebook kann nach dem Start entweder DOS oder ein HP-Programm zur Anzeige von Dokumentationen gestartet werden. Um Ubuntu zu installieren muss der Rechner ausgeschaltet werden. Nach dem Einschalten bin ich dann durch drücken der F10 Taste ins BIOS gekommen, um die USB Schnittstelle als Boot device zu ändern. Dazu wird im Tab “Boot Options” unter “UEFI Boot Order” der Punkt “USB Flash drive/USB Hard disk” an die erste Stelle verschoben und dann gespeichert.</li>
-  <li>Dann wird der zuvor erstellte bootable USB stick in einen USB Interface eingesteckt und das Notebook neu zur Installation von Ubuntu gestartet. Während der Installation von Ubuntu habe ich folgendes ausgewählt bzw. eingegeben<ul>
-      <li>Sprache: Deutsch und “Install Ubuntu”</li>
-      <li>Keyboard layout: Deutsch</li>
-      <li>What Apps would you like to install to start with? “Normale Installation” , Andere Optionen: “Download updates während der Installation von Ubuntu” und “Install third-party…”</li>
+  <li>Dann wird der zuvor erstellte bootable USB stick in einen USB Interface eingesteckt und das Notebook neu zur Installation von Ubuntu gestartet. Das dauert zu Beginn ein paar Minuten. Dann geht es los - während der Installation habe ich folgendes ausgewählt bzw. eingegeben<ul>
+      <li>Sprache: Deutsch und “Ubuntu installieren”</li>
+      <li>Tastaturbelegung: Deutsch</li>
+      <li>Verbindung mit dem WLAN durch auswählen und Passworteingabe</li>
+      <li>Welche Anwendungen möchten Sie am Anfang installieren? “Normale Installation” , Andere Optionen: “Während Ubuntu installiert wird Aktualiserungen herunterladen” und “Installieren Sie Software von Drittanbietern für Grafik- und Wi-Fi-Hardware und zusätzliche Medienformate"</li>
       <li>Installationsart “Festplatte löschen und Ubuntu installieren” , Erweiterte Funktionen zur Verschlüsselung der Festplatte anwählen: “LVM bei der neuen Ubuntu-Installation verwenden” und “Die neue Ubuntu-Installation zur Sicherheit verschlüsseln…"</li>
       <li>Ich habe Verschlüsselung gewählt, damit kann niemand ausser mir die Daten auf der Festplatte lesen. Ich muss einen Schlüssel vergeben, der bei jedem Start des Notebooks eingegeben werden muss. Der Schlüssel muss sicher aufbewahrt werden. Ohne Schlüssel können die Daten nicht mehr gelesen werden. Ausserdem habe ich die Option für den “Recovery Key” gewählt und auch “Überschreiben des leeren Bereichs der Festplatte”. Der Schlüssel und Revovery Key müssen sicher aufbewahrt werden - mehr dazu beim Thema “Passwortmanager”</li>
       <li>Auswahl der Zeitzone.</li>
-      <li>Eingabe von Namen, Benutzername und Passwort mit der Option “Passwort zum anmelden abfragen”, Kein "Active directory”, da das Notebook nicht in einem Microsoft Netzwerk betrieben wird</li>
-      <li>Ortungsdienste “Nicht aktiviert”</li>
-      <li>Helfen Sie mit Ubuntu zu verbessern - “Ja, sende die Systeminformationen an Canonical” ausgewählt</li>
-      <li>Livepatch nicht aktiviert, da für ein privates Notebook nicht erforderlich</li>
-      <li>Verbinden Sie Ihre Online Konten: Wird später ausgeführt</li>
+      <li>Eingabe von Namen, Benutzername, Passwort mit der Option “Automatisch anmelden”, Kein "Active directory”, da das Notebook nicht in einem Microsoft Netzwerk betrieben wird. Automatisch anmelden habe ich gewählt, da mit der Abfrage des Schlüssels beim Start des Notebooks der Zugang schon geschützt ist - das kann später auch noch geändert werden.</li>
     </ul>
   </li>
 </ul>
-<p>Somit ist nun die Basiseinrichtung des Notebook abgeschlossen und steht zum zum Surfen im Internet mit Firefox, für allgemeine Büroarbeiten mit Libre Office zur Verfügung. Das ganze war überraschend problemlos und dauerte weniger als 2 Stunden.</p>
-<p>Dann wird im BIOS die “Boot Order” wieder auf den ursprünglichen Wert “” zurückgesetzt.</p>
-<h1>Einrichtung vom Netzwerk und Ausgabegeräten</h1>
-<p>&nbsp;</p>
+<p>Nach der Bestätigung erfolgt die Installation von Ubuntu auf der Festplatte. Danach erfolgt die Frage “Jetzt neu starten”. Vor der Bestätigung wird der USB Stick abgezogen, so dass das neu installierte Betriebssystem vom Harddisk verwendet wird. Es erfolgen weitere Einrichtungen:</p>
+<ul>
+  <li>Verbinden Sie Ihre Online Konten: Wird später ausgeführt</li>
+  <li>Livepatch nicht aktiviert, da für ein privates Notebook nicht erforderlich</li>
+  <li>Helfen Sie mit Ubuntu zu verbessern - “Ja, sende die Systeminformationen an Canonical” ausgewählt</li>
+  <li>Ortungsdienste “Nicht aktiviert”</li>
+  <li>Irgendwann kommt die Frage: “Aktualisierte Anwendungen wurden seit der Veröffentlichung von Ubuntu 22.04 herausgegeben. Möchten Sie diese jetzt installieren?" mit “Jetzt installieren” fortfahren. Danach ist ein Neustart erforderlich.</li>
+</ul>
+<p>Somit ist nun die Basiseinrichtung des Notebook abgeschlossen und steht zum zum Surfen im Internet mit Firefox, für allgemeine Büroarbeiten mit Libre Office und weiteren Tools zur Verfügung. Alles funktioniert einwandfrei - das ganze war überraschend problemlos und dauerte weniger als eine Stunde.</p>
+<p>Dann wird im BIOS die “Boot Order” wieder auf den ursprünglichen Wert “OS Boot Manager” als 1. Bootoption zurückgesetzt.</p>
+<h1>Test und Einrichtung von Ausgabegeräten</h1>
+<h1>Einrichten eines weiteren Benutzers</h1>
+<p>Da meine Frau das Notebook auch nutzen wird, habe ich für sie einen neuen Benutzer eingerichtet:</p>
+<ul>
+  <li>Dafür habe ich zunächst die Einstellungen in die linke Favoritenleiste gebracht: Über das “Windows Menü” mit der rechten Maustaste die Einstellungen angewählt und dort “Zu Favoritenleiste hinzufügen”</li>
+  <li>In der Favoritenleiste Einstellungen ausgewählt und dort “Benutzer”&nbsp;</li>
+  <li>Durch “Entsperren” und Eingabe des Passworts da Menü aktiviert</li>
+  <li>“Benutzerkonto hinzufügen …”</li>
+  <li>Vollständigen Namen und Benutzername eingeben, Option “Bei der nächsten Anmeldung Passwort wählen” belassen und als Systemverwalter festgelegt</li>
+</ul>
+<p>Damit können wir beide das Notebook nutzen wobei jeder seine individuellen Einrichtungen vornehmen kann.</p>
 <h1>Einrichtung von Programmen</h1>
+<h2>Passwortmanager</h2>
+<p>Ein Passwortmanager ist mir wichtig, da ich mir die Passwörter nicht merken kann und verschiedene Systeme auf mehreren Geräte nutze und dabei immer einen gut geschützten Zugang möchte. Ich nutze dafür den Cloud-Dienst 1Password. Mit 1password sind alle meine Passwörter mit meinem Schlüssel in der Cloud verschlüsselt abgelegt, so dass nur ich mit meinem Schlüssel und meinem Masterpasswort dazu Zugang habe. Damit besteht keine Notwendigkeit, dass ich Passwörter anderweitig z.B. im Browser speichere. Die Einrichtung von 1Password erfolgt folgendermassen:</p>
+<ul>
+  <li>Im Firefox auf die Downloadseite von 1Password gehen und die Version für “Ubunutu, Debian, Linux Mint etc.” herunterladen</li>
+</ul>
+<h2>Browser einrichten</h2>
+<p>Verwendung von Cookies ablehnen</p>
 <h1>Resume</h1>
 <p>&nbsp;</p>
 <h1>Links</h1>
