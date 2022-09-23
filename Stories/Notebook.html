@@ -2,7 +2,7 @@
 title: Notebook beschaffen und einrichten
 description: Vorgehen zum Beschaffen und Einrichten eines einfachen Notebook für Büroarben und den persönlichen Gebrauch
 published: true
-date: 2022-09-23T13:16:50.388Z
+date: 2022-09-23T15:00:26.651Z
 tags: notebook office bilder betriebssystem
 editor: ckeditor
 dateCreated: 2022-09-13T12:16:49.693Z
@@ -47,7 +47,7 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Die Suche nach einem geeigneten Produkt erfolgte im Internet. Dabei wurden die Seiten von verschiedenen Anbietern wie Amazon, Media Markt, NBB, Preisvergleich, Interdiscount, Digitec, Brack oder Microspot Mitte September 2022 durchsucht. Dabei stellt sich der HP 250 G8 45R44S als das günstigste Produkt für EUR 269 (mit Lieferung und Rundum-Sorglospaket EUR 282) heraus, das alle wesentlichen Anforderungen mit einer Ausnahme erfüllt. Es gibt auch ähnliche Produkte z.B. von ASUS, Lenovo, Huawei, &nbsp;Acer oder Fujitsu zu ähnlichen Preisen, erfüllen jedoch dann die Anforderungen bezüglich SD Card Leser oder USB-C Schnittstelle zum Teil nicht. Der obengenannte Preis scheint im Vergleich günstig zu sein - die meisten Modelle liegen im Bereich von 300 bis 400 CHF/EUR.</p>
 <p>Die Ausnahme bei der Erfüllung der wesentlichen Anforderungen ist das Betriebssystem - es gibt eine geringe Auswahl mit vorinstalliertem Linux Derivaten. Diese sind dann auch noch teurer als Rechner mit Windows, das bei den meisten Modellen angeboten wird. Da auf diesen Modellen ein Derivat von Linux selbst installiert werden kann, wurde das Betriebssystem nicht als Kriterium betrachtet, so dass alle Modelle, auch mit Windows oder ohne vorinstalliertem Betriebssystem betrachtet wurden. Zu beachten ist dabei die Kompatibilität des Graphicprozessors oder anderer Schnittstellen mit dem Betriebssystem. Mint oder Ubuntu sind spezielle für Notebooks zugeschnittene Linux Derivate, so dass keine grösseren Probleme erwartet werden - bei Inkompatibilitäten kann das jedoch doch recht aufwändig werden. Ubuntu bietet auch eine Liste mit certified Hardware, <a href="https://ubuntu.com/certified?q=&amp;limit=20&amp;category=Desktop&amp;category=Laptop">https://ubuntu.com/certified?q=&amp;limit=20&amp;category=Desktop&amp;category=Laptop</a> - das von mir ausgewählte Notebook ist jedoch nicht darauf zu finden. &nbsp;Bei Intel Graphic Prozessoren wird jedoch generell eine gute Kompatibilität versprochen. Es bleibt ein Risiko, das nur mit ausprobieren beseitigt werden kann. Zumindest für das ausgewählte Notebook werde ich bald Gewissheit haben.</p>
 <h1>Beschaffung der Hardware und Installation vom Betriebssystem</h1>
-<p>Nach der Bestellung kam das Notebook nach 3 Tagen zu Hause an - alles ist wie bestellt. &nbsp;Ein kleiner Wermutstropfen: Das Gerät hat einen separaten Ladestecker und muss so über das mitgelieferte Netzgerät mit Strom versorgt werden und nicht über den vorhandenen USB-C Anschluss. Das bedeutet eine zusätzliches Ladegerät in meiner Sammlung, nachdem ich schon mit DELL- und Lenovo Ladgeräten ausgerüstet bin.</p>
+<p>Nach der Bestellung kam das Notebook nach 3 Tagen zu Hause an - alles ist wie bestellt. &nbsp;Ein kleiner Wermutstropfen: Das Gerät hat einen separaten Ladestecker und muss so über das mitgelieferte Netzgerät mit Strom versorgt werden und nicht über den vorhandenen USB-C Anschluss. Das bedeutet eine zusätzliches Ladegerät in meiner Sammlung, nachdem ich schon mit verschiedenen DELL- und Lenovo Ladgeräten ausgerüstet bin.</p>
 <p>Der nächste wichtige Schritt ist die Auswahl und Installation des Betriebssystems. Um zu schauen wie weit ich mit einem Linux basierten Betriebssystem komme, habe ich mich entschieden, kein Windows auf diesem Notebook zu installieren, was auch parallel zum Linux-basierten Betriebssystem möglich wäre. Die Geschichte und die modernen Derivate von Linux sind im Wikipedia ausführlich beschrieben &nbsp;<a href="https://de.wikipedia.org/wiki/Linux">https://de.wikipedia.org/wiki/Linux</a>, so dass ich darauf nicht eingehe. Ich habe mich für die Installation von Ubuntu entschieden, da dies weit verbreitet ist und eine gute Homepage zur Unterstützung bietet. Die verschiedenen Derivate für Notebooks basieren wie Ubuntu meist auf Devian und unterscheiden sich hauptsächlich durch die vorinstallierte Software und die Unterstützung von verschiedenen Gerätetreibern. Bei Problemen könnten deshalb auch noch Teile von anderen Linux-Derivaten ergänzt werden.</p>
 <p>Für die Installation von Ubuntu wird eine ausführlich Anleitung (in Englisch) geboten: <a href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview</a></p>
 <p>Nachfolgend sind die einzelnen Schritte, wie ich sie durchgeführt habe, beschrieben:</p>
@@ -77,6 +77,14 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Somit ist nun die Basiseinrichtung des Notebook abgeschlossen und steht zum zum Surfen im Internet mit Firefox, für allgemeine Büroarbeiten mit Libre Office und weiteren Tools zur Verfügung. Alles funktioniert einwandfrei - das ganze war überraschend problemlos und dauerte weniger als eine Stunde und das ohne irgend einen Account bei einem Anbieter.</p>
 <p>Dann wird im BIOS die “Boot Order” wieder auf den ursprünglichen Wert “OS Boot Manager” als 1. Bootoption zurückgesetzt.</p>
 <h1>Test und Einrichtung von Ausgabegeräten</h1>
+<p>Nachdem das Betriebssystem eingerichtet ist, habe ich die Schnittstellen getestet:</p>
+<ul>
+  <li>Der Ladestecker ist schon in Betrieb mit einem mit gelieferten externen Netzteil mit 45W Leistung.</li>
+  <li>Die beiden USB-A Schnittstellen wurden mit USB sticks und externer Maus und Tastatur getestet.</li>
+  <li>An der USB-C Schnittstelle wurde ein Adapter mit mehreren USB-A Steckplätzen&nbsp;und einem Netzwerkanschluss getestet - alles funktioniert. Das Laden des Notebooks über die USB-C Schnittstelle geht leider nicht.</li>
+  <li>Kamera, Mikrofon und Lautsprecher wurden später getestet, als entsprechende APPS installiert waren - alles okay.</li>
+  <li>Da es leider noch nicht ganz Papierlos geht, wurde im Büro ein Druck verbunden, der am Router angeschlossen ist.</li>
+</ul>
 <h1>Einrichten eines weiteren Benutzers</h1>
 <p>Da meine Frau das Notebook auch nutzen wird, habe ich für sie einen neuen Benutzer eingerichtet:</p>
 <ul>
@@ -89,12 +97,13 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Damit können wir beide das Notebook nutzen wobei jeder seine individuellen Einrichtungen vornehmen kann.</p>
 <h1>Einrichtung von Programmen</h1>
 <h2>Passwortmanager</h2>
-<p>Ein Passwortmanager ist mir wichtig, da ich mir die Passwörter nicht merken kann und verschiedene Systeme auf mehreren Geräte nutze und dabei immer einen gut geschützten Zugang möchte. Ich nutze dafür den Cloud-Dienst 1Password. Mit 1password sind alle meine Passwörter mit meinem Schlüssel in der Cloud verschlüsselt abgelegt, so dass nur ich mit meinem Schlüssel und meinem Masterpasswort dazu Zugang habe. Damit besteht keine Notwendigkeit, dass ich Passwörter anderweitig z.B. im Browser speichere. Die Einrichtung von 1Password erfolgt folgendermassen:</p>
+<p>Ein Passwortmanager ist mir wichtig, da ich mir die Passwörter nicht merken kann und verschiedene Systeme auf mehreren Geräte nutze und dabei immer einen gut geschützten Zugang möchte. Ich nutze dafür den Cloud-Dienst 1Password. Mit 1password sind alle meine Passwörter mit meinem Schlüssel in der Cloud verschlüsselt abgelegt, so dass nur ich mit meinem Schlüssel und meinem Masterpasswort dazu Zugang habe. Damit besteht keine Notwendigkeit, dass ich Passwörter anderweitig z.B. im Browser speichere. Ich habe nicht die bei Ubuntu vorinstallierten Versionen von 1Password genommen,da diese schlecht bewertet sind. Die Einrichtung von 1Password erfolgt direkt von der Seite von 1Password folgendermassen:</p>
 <ul>
-  <li>Im Firefox auf die Downloadseite von 1Password gehen und die Version für “Ubunutu, Debian, Linux Mint etc.” herunterladen</li>
-  <li>Im Browser <a href="https://support.1password.com/install-linux/">1Password</a> zu “Add an account” gehen und bei meinem Account von 1password anmelden mit E-Mail, Schlüssel und Passwort anmelden</li>
-  <li>Unter dem Namen rechts oben das Feld “Holen Sie sich die Apps” anklicken, dann “Manuell anmelden”, “Fertig”</li>
+  <li>Im Firefox auf die Downloadseite von 1Password gehen und die Version für “Ubuntu, Debian, Linux Mint etc.” herunterladen</li>
+  <li>Im Browser zu <a href="https://support.1password.com/install-linux/">1Password</a> gemäss Anleitung 1Paswort auf dem Notebook installieren und mit E-Mail, Schlüssel und Passwort anmelden</li>
 </ul>
+<p>Danach habe ich auch das ADD in für Firefox mit den Anmeldedaten hinzgefügt.</p>
+<p>Damit stehen alle meine Anmeldedaten auf dem Notebook für APPS und andere System geschützt zur Verfügung.</p>
 <h2>Browser einrichten</h2>
 <p>Verwendung von Cookies ablehnen</p>
 <h1>Resume</h1>
