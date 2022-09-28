@@ -2,7 +2,7 @@
 title: Software Liste
 description: Hier wollen wir interessante Open Source Software sammeln um diese zu beschrieben, testen etc.   
 published: true
-date: 2022-09-28T08:39:11.474Z
+date: 2022-09-28T08:41:08.329Z
 tags: open source, foss, software, free and open source software
 editor: markdown
 dateCreated: 2022-09-28T08:38:43.743Z
