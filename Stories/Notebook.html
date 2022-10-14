@@ -2,7 +2,7 @@
 title: Notebook beschaffen und einrichten
 description: Vorgehen zum Beschaffen und Einrichten eines einfachen Notebook für Büroarben und den persönlichen Gebrauch
 published: true
-date: 2022-10-14T08:32:25.769Z
+date: 2022-10-14T12:01:56.786Z
 tags: notebook, office, bilder, betriebssystem
 editor: ckeditor
 dateCreated: 2022-09-13T12:16:49.693Z
@@ -83,7 +83,7 @@ dateCreated: 2022-09-13T12:16:49.693Z
   <li>Die beiden <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Spezifikationen">USB-A</a> Schnittstellen wurden mit USB-Sticks und externer Maus und Tastatur getestet.</li>
   <li>An der <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Spezifikationen">USB-C</a> Schnittstelle wurde ein Adapter mit mehreren <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Spezifikationen">USB-A</a> Steckplätzen&nbsp;und einem Netzwerkanschluss getestet - alles funktioniert. Das Laden des <a href="https://de.wikipedia.org/wiki/Notebook">Notebooks</a> über die <a href="https://de.wikipedia.org/wiki/Universal_Serial_Bus#Spezifikationen">USB-C</a> Schnittstelle geht leider nicht.</li>
   <li>Über den <a href="https://de.wikipedia.org/wiki/High_Definition_Multimedia_Interface">HDMI</a>-Anschluss habe ich einen externen Bildschirm verbunden. Das hat auf Anhieb funktioniert, auch das Teilen der Bildschirme, so dass beide für dass Arbeiten genutzt werden können.</li>
-  <li>Über den SD-Kartenslot können auf Anhieb Bilder betrachtet und heruntergeladen werden.</li>
+  <li>Über den <a href="https://de.wikipedia.org/wiki/SD-Karte">SD-Kartenslot</a> können auf Anhieb Bilder betrachtet und heruntergeladen werden.</li>
   <li>Kamera, Mikrofon und Lautsprecher wurden später getestet, als entsprechende Apps installiert waren - alles okay.</li>
   <li>Da es leider noch nicht ganz Papierlos geht, wurde im Büro ein Drucker verbunden, der am Router angeschlossen ist. Über die “Aktivitäten Übersicht” und der Eingabe “Drucker” wurde das Programm zum Hinzufügen eines Druckers aufgerufen. Dies hat den richtigen Drucker schon erkannt und der Treiber war schon installiert. Ich habe den Drucker als Vorgabedrucker definiert, so dass er als Standarddrucker verwendet wird. Der Ausdruck hat auf Anhieb funktioniert.</li>
 </ul>
@@ -99,15 +99,17 @@ dateCreated: 2022-09-13T12:16:49.693Z
 <p>Damit können wir beide das <a href="https://de.wikipedia.org/wiki/Notebook">Notebook</a> nutzen wobei jeder seine individuellen Einrichtungen vornehmen kann.</p>
 <h1>Einrichtung von Programmen</h1>
 <h2>Passwortmanager</h2>
-<p>Ein Passwortmanager ist mir wichtig, da ich mir die Passwörter nicht merken kann und verschiedene Systeme auf mehreren Geräte nutze und dabei immer einen gut geschützten Zugang möchte. Ich nutze dafür den Cloud-Dienst 1Password. Mit 1password sind alle meine Passwörter mit meinem Schlüssel in der Cloud verschlüsselt abgelegt, so dass nur ich mit meinem Schlüssel und meinem Masterpasswort dazu Zugang habe. Damit besteht keine Notwendigkeit, dass ich Passwörter anderweitig z.B. im Browser speichere. Ich habe nicht die bei<a href="https://de.wikipedia.org/wiki/Ubuntu"> Ubuntu</a> vorinstallierten Versionen von 1Password genommen, da diese schlecht bewertet sind. Die Einrichtung von 1Password erfolgt direkt von der Seite von 1Password folgendermassen:</p>
+<p>Ein Passwortmanager ist mir wichtig, da ich mir die Passwörter nicht merken kann und verschiedene Systeme auf mehreren Geräte nutze und dabei immer einen gut geschützten Zugang möchte. Ich nutze dafür den Cloud-Dienst 1Password. Mit 1password sind alle meine Passwörter mit meinem Schlüssel in der Cloud verschlüsselt abgelegt, so dass nur ich mit meinem Schlüssel und meinem Masterpasswort dazu Zugang habe. Damit besteht keine Notwendigkeit, dass ich Passwörter anderweitig z.B. im Browser speichere.&nbsp;</p>
+<p>In der Favoritenleiste rufe ich “Ubuntu Software” auf und tippe “1p” ein. Es erscheinen 2 vorinstallierte Programm - “1password" und “1passwor-linux”. Ich habe “1password" gewählt, da &nbsp;“1passwor-linux” gemäss Beschreibung eine inoffizielle Version ist., Dann:</p>
 <ul>
-  <li>Im Firefox auf die Downloadseite von 1Password gehen und die Version für “Ubuntu, Debian, Linux Mint etc.” herunterladen</li>
-  <li>Im Browser zu 1Password gemäss Anleitung 1Paswort auf dem <a href="https://de.wikipedia.org/wiki/Notebook">Notebook</a> installieren und mit E-Mail, Schlüssel und Passwort anmelden</li>
+  <li>Installieren und Freigabe zur Installation mit meinem Passwort.</li>
+  <li>Danach bringe ich ich 1password in die Favoritenleiste durch “Aktivitäten” und eintippen “1p”, mit der rechten Maustaste anwählen für die Favoritenleiste bringen</li>
+  <li>1password in der Favoritenleiste starten, einloggen, Domäne 1passwort.eu wählen und mit E-Mail, Secret key und Passwort anmelden</li>
 </ul>
-<p>Danach habe ich auch das Add-In für Firefox mit den Anmeldedaten hinzugefügt.</p>
+<p>Danach habe ich im Firefox &nbsp;das Add-In mit den Anmeldedaten hinzugefügt.</p>
 <p>Damit stehen alle meine Anmeldedaten auf dem <a href="https://de.wikipedia.org/wiki/Notebook">Notebook</a> für Apps und andere System geschützt zur Verfügung.</p>
 <h2>Browser einrichten</h2>
-<p>Bisher nutze ich als Browser hauptsächlich Chrome und manchmal auch Edge (früher Internet Explorer) und Firefox. Um meine Daten besser unter Kontrolle zu halten, habe ich mich entschieden, auf dem <a href="https://de.wikipedia.org/wiki/Notebook">Notebook</a> mit Firefox als Browser zu arbeiten. Im Firefox habe ich folgende Einstellungen vorgenommen:</p>
+<p>Bisher nutze ich als Browser hauptsächlich Chrome und manchmal auch Edge (früher Internet Explorer) und Firefox. Um meine Daten besser unter Kontrolle zu halten, habe ich mich entschieden, auf dem <a href="https://de.wikipedia.org/wiki/Notebook">Notebook</a> mit Firefox als Browser zu arbeiten. Im Firefox habe ich folgende Einstellungen vorgenommen (Änderungen gegenüber den Vorschlägen von Firefox):</p>
 <ul>
   <li>Allgemein<ul>
       <li>Firefox als Standardbrowser festlegen</li>
@@ -124,8 +126,9 @@ dateCreated: 2022-09-13T12:16:49.693Z
     </ul>
   </li>
   <li>Datenschutz und Sicherheit<ul>
+      <li>Websites eine “Do Not Track”-Infomration senden,…: “Immer”</li>
       <li>“Cookies und Website-Daten beim beenden von Firefox löschen”, Ausnahmen sind in der Liste für vertrauenswürdige Websites definiert</li>
-      <li>“Chronik löschen wenn Firefox beendet wird”</li>
+      <li>"Die Chronik löschen, wenn Firefox beendet wird”</li>
       <li>“Firefox das installieren und Durchführen von Studien nicht erlauben”</li>
       <li>“Nur HTTPS-Modus in allen Fenstern aktivieren”</li>
     </ul>
