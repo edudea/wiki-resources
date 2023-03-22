@@ -2,7 +2,7 @@
 title: 2 Dokumentenverwaltung und Datenaustausch
 description: Speicherung, Austausch und Archivierung von Dokumenten, Fotos, Videos
 published: true
-date: 2023-03-22T09:26:10.581Z
+date: 2023-03-22T10:35:14.278Z
 tags: dokumentenverwaltung, foto, video, dokumentenaustausch
 editor: ckeditor
 dateCreated: 2022-10-04T07:54:35.360Z
@@ -186,15 +186,17 @@ dateCreated: 2022-10-04T07:54:35.360Z
 <p>Als Browserversion ist Mega überall verfügbar. Der Desktop Client-Version ist nicht in Ubuntu Software enthalten.</p>
 <p>Die Installation erfolgt folgendermassen:</p>
 <ul>
-  <li>Wenn alle Daten von Mega auf dem Rechner synchronisert werden sollen, vorab ein Verzeichnis für die synchroniserten Mega-Daten erstellen.</li>
+  <li>Wenn alle Daten von Mega auf dem Rechner synchronisert werden sollen, vorab ein Verzeichnis für die synchroniserten Mega-Daten erstellen, im Terminal z.B. “mkdir /home/usr/mega/”.</li>
   <li>Mega im Browser öffnen und unter “Einstellungen das Menue “Platformen” “Mega Desktop-App” anwählen</li>
   <li>Unter “Linux” “Ubuntu” und dort die richtige Version “Ubuntu 22.04” herunterladen</li>
   <li>Im Terminal den Befehl zur Installation wie angezeigt eingeben “sudo apt install …” &nbsp;und Passwort und andere Fragen bestätigen</li>
-  <li>Die Desktop App steht damit zur Verfügung und kannin die favoriten gebracht und aufgerufen werden</li>
+  <li>Die Desktop App steht damit zur Verfügung und kannin die favoriten gebracht und aufgerufen werden, nach Aufruf der Desktop App:</li>
+  <li>Anmelden mit der Mailadresse und dem Passwort - Mega überträgt Dateiliste</li>
+  <li>Installationsart wählen “Vollsynchroniserung” oder “Odnersync”, gewählt “Vollsynchroniserung”</li>
+  <li>Als Ordner den zuvor erstellten Ordner wählen und bestätigen</li>
+  <li>Jetzt werden alle Dateien von Mega synchronisert, das kann etwas dauern</li>
+  <li>Wenn Ordnersync gewählt wird, muss für jeden Ordner von Mega ein Ordner auf dem Rechner erstellt werden, dann die Zuordnung mit dem Sync Befehl, sodann werden die Ordner synchronisert</li>
 </ul>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2><a href="https://nextcloud.com/de/">nextcloud</a></h2>
 <p>Unter Ubuntu Software ist der nextcloud Desktop client vorhanden - auf dem Linux Notebook wird er durch anwählen und anklicken von “installieren” in Ubuntu Software installiert.</p>
@@ -202,7 +204,7 @@ dateCreated: 2022-10-04T07:54:35.360Z
 <h2><a href="https://signal.org/de/">signal</a></h2>
 <p>Signal ist nicht in Ubuntu Software enthalten.</p>
 <p>Signal muss zunächst auf dem Smartphone, meines mit Android, installiert werden. Dazu wird die App aus dem Sore heruntergeladen und installiert, dann muss die Mobilnummer und eine PIN angegeben werden und der Benutzername wird abgefragt. Die PIN wird für die Verschlüsselung verwendet und muss sicher aufbewahrt werden, bei mir im 1password. Die Kontakte werden verknüpft - da diese nie durch Signal im Klartext lesbar sind ist das unproblematisch ist. Nach der der Rückfrage auf dem Handy ist die App installiert und einfach bedienbar.&nbsp;</p>
-<p>Für die Installation unter Linux gibt es eine Anleitung bei Signal. Diese ist jedoch nicht korrekt, da veraltete Verzeihnisnamen verwendet werden. Nachdem das schon erfolglos aufgerufen bae, musste ich in Ubuntu mit der Konsole die schon übertragenen Dateien löschen. Dann habe ich die <a href="https://wiki.ubuntuusers.de/Signal_Desktop/">Anleitung unter Ubunterusers zur Installation des Signal Desktops</a> verwendet. Das funktioniert einwandfrei.</p>
+<p>Für die Installation unter Linux gibt es eine Anleitung bei Signal. Diese ist jedoch nicht korrekt, da veraltete Verzeihnisnamen verwendet werden. Nachdem das schon erfolglos aufgerufen habe, musste ich in Ubuntu mit der Konsole die schon übertragenen Dateien löschen. Dann habe ich die <a href="https://wiki.ubuntuusers.de/Signal_Desktop/">Anleitung unter Ubunterusers zur Installation des Signal Desktops</a> verwendet. Das funktioniert einwandfrei.</p>
 <p>Nach der Installation wird Signal über die Aktivitäten mit der Favoritenleiste verknüpft und dann aufgerufen.</p>
 <p>&nbsp;</p>
 <h2><a href="https://threema.ch/de/">threema</a></h2>
