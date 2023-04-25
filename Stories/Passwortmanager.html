@@ -2,7 +2,7 @@
 title: 6 Passwortmanager
 description: Auswählen und Einrichten eines Passwortmanagers
 published: true
-date: 2023-04-25T09:37:15.406Z
+date: 2023-04-25T10:10:56.944Z
 tags: passwort, anmeldung, sicherheit
 editor: ckeditor
 dateCreated: 2023-04-24T08:05:39.413Z
@@ -11,17 +11,26 @@ dateCreated: 2023-04-24T08:05:39.413Z
 <h1>Ausgangslage</h1>
 <p>Ein <a href="https://de.wikipedia.org/wiki/Kennwortverwaltung">Passwortmanager</a> ist für mich ein absolut notwendiges Tool, um mich mit den verschiedenen Geräten sicher im Internat bewegen zu können. Mit dem Passwortmanager muss ich mir nicht mehr all Passwörter und Zugangscodes merken, sondern ich kann mit einem Masterpasswort die verschiedenen Passwörter abrufen. Dies ermöglicht mir für verschiedene Anwendungen verschieden Passwörter zu verwenden. Diese können auch länger und damit sicherer sein, da der Passwortmanager das Eintippen des Passworts bei den meisten Applikationen übernimmt.</p>
 <p>Zur Schwachstelle kann damit der Passwortmanager selbst werden, da bei einem Zugang zum Passwortmanager dann alle Passwörter offen liegen könnten. Deshalb achte ich beim Passwortmanager besonders darauf, dass ich alle Daten unter meiner Kontrolle habe.</p>
-<p>Bisher verwende ich 1password als Passwortmanager. 1password basiert auf der Zero Knowledge Technologie. Die Daten werden in der Cloud verwaltet und nur von mir mit meinem Schlüssel zugreifbar. 1paaword ist nicht Open Source und mit der neuen Version ist auch die Möglichkeit entfallen, die Datenbank lokal zu speichern. Dies hat dazu geführt, dass ich mich nach kostenlosen Open Source Alternativen umgeschaut habe.</p>
+<p>Bisher verwende ich 1password als Passwortmanager. 1password basiert auf der Zero Knowledge Technologie. Die Daten werden in der Cloud verwaltet und nur von mir mit meinem Schlüssel zugreifbar. 1password ist nicht Open Source und mit der neuen Version 8 ist auch die Möglichkeit entfallen, die Datenbank lokal zu speichern. Dies hat dazu geführt, dass ich mich nach kostenlosen Open Source Alternativen umgeschaut habe.</p>
 <h1>Anforderungen</h1>
 <p>Folgende wesentlichen Anforderungen stelle ich an einen Passwortmanager:</p>
 <ul>
   <li>Programmcode als Open Source verfügbar</li>
-  <li>Lauffähig auf allen gängigen Plattformen wie Linux, Windows, Mac, Andoid</li>
+  <li>Lauffähig auf allen gängigen Plattformen wie Linux, Windows, Mac, Andoid und Browsern</li>
   <li>Zero Knowledge Technologie, alle Daten bleiben unter meiner Kontrolle</li>
+  <li>Sichere Verschlüsselung</li>
+  <li>Automatisches Ausfüllen von Zugangsdaten</li>
   <li>Einfache Handhabung und Bedienung</li>
   <li>Kostengünstig, möglichst kostenfrei</li>
 </ul>
 <h1>Auswahl</h1>
+<p>Mit einer Recherche im Internet habe ich mir einen Überblick über die vorhandenen Open Source Passwortmanager verschafft - siehe dazu auch die im Kapitel Links angegbenen Vergleiche. Darauf basierend und im Abgleich meiner Anforderungen kommen für mich folgende Tools in Frage:</p>
+<ul>
+  <li>Bitwarden</li>
+  <li>KeePass</li>
+</ul>
+<p>Andere Tools schieden aus, da sie nicht auf allen Plattformen lauffähig sind oder der Focus nicht auf den obengenannten Anforderungen liegt, können jedoch bei etwas anderen Anforderungen ebenso gut Dienste bieten.</p>
+<p>Alle Tools werden im privaten Gebrauch kostenlos zur Verfügung gestellt, manche sind kostenpflichtig bei einer geschäftlichen Nutzung. Um alle Daten unter meiner Kontrolle zu haben ohne auf Cloud Dienste angewiesen zu sein, habe ich mich für die Verwendung von KeePass entschieden.</p>
 <h1>Installation</h1>
 <p>Linux/Ubuntu: KeePassXC ist in Ubuntu Software vorhanden und einfach zu installieren.</p>
 <p>Browser Erweiterungen im Firefox</p>
